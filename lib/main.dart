@@ -1,20 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/pages/home.dart';
+import 'package:myapp/gradient%20container.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const MaterialApp(
+      home: Scaffold(
+          backgroundColor: Colors.deepPurple, body: GradientContainer()),
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter Demo',
-    
-      home: HomePage()
-    );
-  }
-}
